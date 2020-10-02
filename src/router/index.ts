@@ -8,7 +8,6 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home,
-    // component: Form,
     meta: {
       title: 'Home',
     }

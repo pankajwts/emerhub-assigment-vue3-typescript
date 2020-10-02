@@ -81,7 +81,6 @@ export default class Form extends Vue {
 
     @Watch('feedbackId')
     fetchFeedback(): void {
-        console.log('scds csd cs cscdsc');
         firebase.db
             .collection("feedbacks")
             .doc(this.feedbackId)
@@ -95,7 +94,6 @@ export default class Form extends Vue {
             });
     }
     created(): void {
-        console.log(this.$route.params.id);
         if (this.$route.params.id) {
             this.newFeedback = false;
 
